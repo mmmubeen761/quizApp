@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-JS Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body onload="show(0)">
+
+    <div class="container mt-5">
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="float-left css">Welcome!
+                    <script>
+                        document.write(sessionStorage.getItem("name").toUpperCase());
+                    </script>
+                </h2>
+                <span class="float-right" id="timer">
+                    <h2 id="min" class="d-inline">00 </h2><h2 class="d-inline">:</h2><h2 id="sec" class="d-inline"> 00</h2></span>
+            </div>
+            <div class="card-body ">
+                <h1 class="card-title pb-1" id="questionEl">Questions goes here</h1><br><br>
+                <p class="card-text optionEl p-2" onclick="activeClas(this)">options</p>
+                <p class="card-text optionEl p-2" onclick="activeClas(this)">options</p>
+                <p class="card-text optionEl p-2" onclick="activeClas(this)">options</p>
+                <p class="card-text optionEl p-2" onclick="activeClas(this)">options</p>
+            </div>
+            <button class="btn btn-primary" id="nextBtn" onclick="nextQ()">Next Question</button>
+            <div class="card-footer text-muted">
+                Powered by: Muhammad Mubeen Malik
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="app.js "></script>
+    <script src="result.js"></script>
+
+</body>
+
+</html>

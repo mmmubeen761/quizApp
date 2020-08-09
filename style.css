@@ -1,0 +1,174 @@
+body {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    background: linear-gradient(to left, rgb(0, 131, 163), rgb(18, 175, 214), rgb(176, 240, 245));
+}
+
+#startBtn {
+    font-size: 40px;
+    border-radius: 50px;
+    background: linear-gradient( white, rgb(18, 175, 214));
+    outline: none;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: auto;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 5px 5px 14px black;
+    /* text-decoration: none !important; */
+}
+
+#startBtn:hover {
+    opacity: .5;
+    color: white;
+}
+
+.mainDiv {
+    align-items: center;
+    display: grid;
+    justify-content: center;
+    margin-top: 10%;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.card-text:hover,
+.active {
+    background-color: rgb(136, 210, 240);
+    border-radius: 50px !important;
+}
+
+#trophy {
+    font-size: 200px;
+}
+
+.name {
+    color: rgb(194, 225, 243);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.score {
+    margin-top: 50px;
+    font-size: 30px;
+    background-color: rgb(100, 209, 236);
+    font-family: monospace;
+}
+
+.time {
+    font-family: cursive;
+    font-size: 30px;
+    color: wheat;
+}
+
+.card-title {
+    font-size: 50px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-title {
+        font-size: 30px !important;
+    }
+}
+
+.card-text {
+    font-size: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .card-text {
+        font-size: 20px !important;
+    }
+}
+
+.css {
+    font-size: 50px !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .css {
+        font-size: 20px !important;
+    }
+}
+
+
+/* .................................................input css................................. */
+
+form {
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    position: relative;
+    width: 250px;
+    height: 44px;
+    line-height: 44px;
+}
+
+label {
+    position: absolute;
+    /* background-color: rgb(153, 255, 0); */
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #000000;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #111;
+    background-color: inherit;
+}
+
+input:invalid {
+    outline: 0;
+    color: #ff2300;
+    border-color: #ff2300;
+}
+
+input:focus,
+input:valid {
+    border-color: #066581;
+    font-size: 20px;
+    color: rgb(2, 74, 83);
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 20px;
+    top: -24px;
+    color: #000000;
+}
+
+
+/* .........................................after question css....................................... */
+
+#questionDiv {
+    box-shadow: 5px 5px 14px black;
+    width: 80%;
+    height: 80vh;
+}
+
+#top {
+    background-color: rgb(0, 174, 255);
+    display: flex;
+    justify-content: space-around;
+}
+
+#main {
+    background-color: rgb(0, 204, 255);
+    padding: 50px;
+}
+
+#displayQue {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+}
